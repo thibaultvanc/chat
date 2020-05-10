@@ -1,15 +1,15 @@
 <?php
 
-namespace Musonza\Chat\Tests;
+namespace Thibaultvanc\Chat\Tests;
 
 use Chat;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Support\Collection;
-use Musonza\Chat\Exceptions\DirectMessagingExistsException;
-use Musonza\Chat\Exceptions\InvalidDirectMessageNumberOfParticipants;
-use Musonza\Chat\Models\Conversation;
-use Musonza\Chat\Models\Participation;
-use Musonza\Chat\Tests\Helpers\Models\Client;
+use Thibaultvanc\Chat\Exceptions\DirectMessagingExistsException;
+use Thibaultvanc\Chat\Exceptions\InvalidDirectMessageNumberOfParticipants;
+use Thibaultvanc\Chat\Models\Conversation;
+use Thibaultvanc\Chat\Models\Participation;
+use Thibaultvanc\Chat\Tests\Helpers\Models\Client;
 
 class ConversationTest extends TestCase
 {
@@ -348,7 +348,7 @@ class ConversationTest extends TestCase
     /** @test */
     public function it_specifies_fields_to_return_for_sender()
     {
-        $this->app['config']->set('musonza_chat.sender_fields_whitelist', ['uid', 'email']);
+        $this->app['config']->set('Thibaultvanc_chat.sender_fields_whitelist', ['uid', 'email']);
 
         $conversation = Chat::createConversation([$this->alpha, $this->bravo]);
         $message = Chat::message('Hello')->from($this->alpha)->to($conversation)->send();

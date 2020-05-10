@@ -1,5 +1,5 @@
 {
-    "name": "musonza/chat",
+    "name": "thibaultvanc/chat",
     "description": "Chat Package for Laravel",
     "type": "library",
     "keywords": [
@@ -22,19 +22,19 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Tinashe Musonza",
+            "name": "Tinashe thibaultvanc",
             "email": "tashtin263@gmail.com",
             "role": "Developer"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Musonza\\Chat\\": "src/"
+            "thibaultvanc\\Chat\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Musonza\\Chat\\Tests\\": "tests"
+            "thibaultvanc\\Chat\\Tests\\": "tests"
         },
         "files": [
             "tests/Helpers/Models.php"
@@ -46,10 +46,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Musonza\\Chat\\ChatServiceProvider"
+                "thibaultvanc\\Chat\\ChatServiceProvider"
             ],
             "aliases": {
-                "Chat": "Musonza\\Chat\\Facades\\ChatFacade"
+                "Chat": "thibaultvanc\\Chat\\Facades\\ChatFacade"
             }
         }
     }

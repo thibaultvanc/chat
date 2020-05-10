@@ -1,10 +1,10 @@
 <?php
 
-namespace Musonza\Chat\Tests;
+namespace Thibaultvanc\Chat\Tests;
 
 use Chat;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Musonza\Chat\Models\Conversation;
+use Thibaultvanc\Chat\Models\Conversation;
 
 class NotificationsTest extends TestCase
 {

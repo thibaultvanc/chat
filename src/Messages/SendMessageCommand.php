@@ -1,9 +1,9 @@
 <?php
 
-namespace Musonza\Chat\Messages;
+namespace Thibaultvanc\Chat\Messages;
 
 use Illuminate\Database\Eloquent\Model;
-use Musonza\Chat\Models\Conversation;
+use Thibaultvanc\Chat\Models\Conversation;
 
 class SendMessageCommand
 {

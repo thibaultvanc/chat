@@ -1,14 +1,14 @@
 <?php
 
-namespace Musonza\Chat\Services;
+namespace Thibaultvanc\Chat\Services;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
-use Musonza\Chat\Eventing\ConversationStarted;
-use Musonza\Chat\Models\Conversation;
-use Musonza\Chat\Traits\Paginates;
-use Musonza\Chat\Traits\SetsParticipants;
+use Thibaultvanc\Chat\Eventing\ConversationStarted;
+use Thibaultvanc\Chat\Models\Conversation;
+use Thibaultvanc\Chat\Traits\Paginates;
+use Thibaultvanc\Chat\Traits\SetsParticipants;
 
 class ConversationService
 {

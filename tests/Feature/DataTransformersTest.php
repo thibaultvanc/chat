@@ -1,10 +1,10 @@
 <?php
 
-namespace Musonza\Chat\Tests\Feature;
+namespace Thibaultvanc\Chat\Tests\Feature;
 
-use Musonza\Chat\Models\Conversation;
-use Musonza\Chat\Tests\Helpers\Transformers\TestConversationTransformer;
-use Musonza\Chat\Tests\TestCase;
+use Thibaultvanc\Chat\Models\Conversation;
+use Thibaultvanc\Chat\Tests\Helpers\Transformers\TestConversationTransformer;
+use Thibaultvanc\Chat\Tests\TestCase;
 
 class DataTransformersTest extends TestCase
 {
@@ -20,7 +20,7 @@ class DataTransformersTest extends TestCase
     public function testConversationWithTransformer()
     {
         $conversation = factory(Conversation::class)->create();
-        $this->app['config']->set('musonza_chat.transformers.conversation', TestConversationTransformer::class);
+        $this->app['config']->set('Thibaultvanc_chat.transformers.conversation', TestConversationTransformer::class);
 
         $responseWithTransformer = $this->getJson(route('conversations.show', $conversation->getKey()))
             ->assertStatus(200);

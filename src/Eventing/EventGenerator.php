@@ -1,6 +1,6 @@
 <?php
 
-namespace Musonza\Chat\Eventing;
+namespace Thibaultvanc\Chat\Eventing;
 
 trait EventGenerator
 {

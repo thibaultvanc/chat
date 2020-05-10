@@ -1,6 +1,6 @@
 <?php
 
-namespace Musonza\Chat\Http\Requests;
+namespace Thibaultvanc\Chat\Http\Requests;
 
 class ClearConversation extends BaseRequest
 {

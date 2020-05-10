@@ -1,8 +1,8 @@
 <?php
 
-namespace Musonza\Chat\ValueObjects;
+namespace Thibaultvanc\Chat\ValueObjects;
 
-use Musonza\Chat\ConfigurationManager;
+use Thibaultvanc\Chat\ConfigurationManager;
 
 class Pagination
 {

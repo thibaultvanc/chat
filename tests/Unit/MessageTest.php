@@ -1,14 +1,14 @@
 <?php
 
-namespace Musonza\Chat\Tests;
+namespace Thibaultvanc\Chat\Tests;
 
 use Chat;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Musonza\Chat\Models\Conversation;
-use Musonza\Chat\Models\Message;
-use Musonza\Chat\Tests\Helpers\Models\Bot;
-use Musonza\Chat\Tests\Helpers\Models\Client;
-use Musonza\Chat\Tests\Helpers\Models\User;
+use Thibaultvanc\Chat\Models\Conversation;
+use Thibaultvanc\Chat\Models\Message;
+use Thibaultvanc\Chat\Tests\Helpers\Models\Bot;
+use Thibaultvanc\Chat\Tests\Helpers\Models\Client;
+use Thibaultvanc\Chat\Tests\Helpers\Models\User;
 
 class MessageTest extends TestCase
 {
@@ -249,7 +249,7 @@ class MessageTest extends TestCase
     /** @test */
     public function it_specifies_fields_to_return_for_sender()
     {
-        $this->app['config']->set('musonza_chat.sender_fields_whitelist', [
+        $this->app['config']->set('Thibaultvanc_chat.sender_fields_whitelist', [
             'name', 'bot_id',
         ]);
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Musonza\Chat\Tests;
+namespace Thibaultvanc\Chat\Tests;
 
 require __DIR__.'/../database/migrations/create_chat_tables.php';
 require __DIR__.'/Helpers/migrations.php';
@@ -8,9 +8,9 @@ require __DIR__.'/Helpers/migrations.php';
 use CreateChatTables;
 use CreateTestTables;
 use Illuminate\Foundation\Application;
-use Musonza\Chat\ChatServiceProvider;
-use Musonza\Chat\Facades\ChatFacade;
-use Musonza\Chat\Tests\Helpers\Models\User;
+use Thibaultvanc\Chat\ChatServiceProvider;
+use Thibaultvanc\Chat\Facades\ChatFacade;
+use Thibaultvanc\Chat\Tests\Helpers\Models\User;
 use Orchestra\Database\ConsoleServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
@@ -45,7 +45,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
 
     protected function migrateTestTables()
     {
-        $config = config('musonza_chat');
+        $config = config('Thibaultvanc_chat');
         $userModel = app($config['user_model']);
         $this->userModelPrimaryKey = $userModel->getKeyName();
     }
@@ -96,12 +96,12 @@ class TestCase extends \Orchestra\Testbench\TestCase
 //             ],
 //         ]);
 
-        $app['config']->set('musonza_chat.user_model', 'Musonza\Chat\Tests\Helpers\Models\User');
-        $app['config']->set('musonza_chat.sent_message_event', 'Musonza\Chat\Eventing\MessageWasSent');
-        $app['config']->set('musonza_chat.broadcasts', false);
-        $app['config']->set('musonza_chat.user_model_primary_key', null);
-        $app['config']->set('musonza_chat.routes.enabled', true);
-        $app['config']->set('musonza_chat.should_load_routes', true);
+        $app['config']->set('Thibaultvanc_chat.user_model', 'Thibaultvanc\Chat\Tests\Helpers\Models\User');
+        $app['config']->set('Thibaultvanc_chat.sent_message_event', 'Thibaultvanc\Chat\Eventing\MessageWasSent');
+        $app['config']->set('Thibaultvanc_chat.broadcasts', false);
+        $app['config']->set('Thibaultvanc_chat.user_model_primary_key', null);
+        $app['config']->set('Thibaultvanc_chat.routes.enabled', true);
+        $app['config']->set('Thibaultvanc_chat.should_load_routes', true);
     }
 
     protected function getPackageProviders($app)

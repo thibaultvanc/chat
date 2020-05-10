@@ -1,11 +1,11 @@
 <?php
 
-namespace Musonza\Chat\Models;
+namespace Thibaultvanc\Chat\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Musonza\Chat\BaseModel;
-use Musonza\Chat\ConfigurationManager;
+use Thibaultvanc\Chat\BaseModel;
+use Thibaultvanc\Chat\ConfigurationManager;
 
 class MessageNotification extends BaseModel
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Musonza\Chat\Services;
+namespace Thibaultvanc\Chat\Services;
 
 use Exception;
-use Musonza\Chat\Commanding\CommandBus;
-use Musonza\Chat\Messages\SendMessageCommand;
-use Musonza\Chat\Models\Message;
-use Musonza\Chat\Traits\SetsParticipants;
+use Thibaultvanc\Chat\Commanding\CommandBus;
+use Thibaultvanc\Chat\Messages\SendMessageCommand;
+use Thibaultvanc\Chat\Models\Message;
+use Thibaultvanc\Chat\Traits\SetsParticipants;
 
 class MessageService
 {

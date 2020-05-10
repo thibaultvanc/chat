@@ -1,12 +1,12 @@
 <?php
 
-namespace Musonza\Chat\Http\Controllers;
+namespace Thibaultvanc\Chat\Http\Controllers;
 
 use Chat;
-use Musonza\Chat\Http\Requests\ClearConversation;
-use Musonza\Chat\Http\Requests\DeleteMessage;
-use Musonza\Chat\Http\Requests\GetParticipantMessages;
-use Musonza\Chat\Http\Requests\StoreMessage;
+use Thibaultvanc\Chat\Http\Requests\ClearConversation;
+use Thibaultvanc\Chat\Http\Requests\DeleteMessage;
+use Thibaultvanc\Chat\Http\Requests\GetParticipantMessages;
+use Thibaultvanc\Chat\Http\Requests\StoreMessage;
 
 class ConversationMessageController extends Controller
 {
@@ -19,7 +19,7 @@ class ConversationMessageController extends Controller
 
     private function setUp()
     {
-        if ($messageTransformer = config('musonza_chat.transformers.message')) {
+        if ($messageTransformer = config('Thibaultvanc_chat.transformers.message')) {
             $this->messageTransformer = app($messageTransformer);
         }
     }

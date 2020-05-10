@@ -1,10 +1,10 @@
 <?php
 
-namespace Musonza\Chat\Messages;
+namespace Thibaultvanc\Chat\Messages;
 
 use Illuminate\Database\Eloquent\Model;
-use Musonza\Chat\Eventing\EventDispatcher;
-use Musonza\Chat\Models\Message;
+use Thibaultvanc\Chat\Eventing\EventDispatcher;
+use Thibaultvanc\Chat\Models\Message;
 
 class SendMessageCommandHandler
 {

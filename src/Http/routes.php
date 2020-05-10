@@ -1,11 +1,11 @@
 <?php
 
-$chatRoutesPrefix = config('musonza_chat.routes.path_prefix');
-$middleware = config('musonza_chat.routes.middleware');
+$chatRoutesPrefix = config('Thibaultvanc_chat.routes.path_prefix');
+$middleware = config('Thibaultvanc_chat.routes.middleware');
 
 Route::group([
     'middleware' => $middleware,
-    'namespace'  => 'Musonza\Chat\Http\Controllers',
+    'namespace'  => 'Thibaultvanc\Chat\Http\Controllers',
     'prefix'     => $chatRoutesPrefix,
 ], function () use ($chatRoutesPrefix) {
     /* Conversation */

@@ -1,8 +1,8 @@
 <?php
 
-namespace Musonza\Chat\Eventing;
+namespace Thibaultvanc\Chat\Eventing;
 
-use Musonza\Chat\Models\Conversation;
+use Thibaultvanc\Chat\Models\Conversation;
 
 class ParticipantsLeft extends Event
 {

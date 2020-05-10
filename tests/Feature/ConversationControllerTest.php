@@ -1,14 +1,14 @@
 <?php
 
-namespace Musonza\Chat\Tests\Feature\Conversation;
+namespace Thibaultvanc\Chat\Tests\Feature\Conversation;
 
 use Chat;
-use Musonza\Chat\ConfigurationManager;
-use Musonza\Chat\Models\Conversation;
-use Musonza\Chat\Tests\Helpers\Models\Bot;
-use Musonza\Chat\Tests\Helpers\Models\Client;
-use Musonza\Chat\Tests\Helpers\Models\User;
-use Musonza\Chat\Tests\TestCase;
+use Thibaultvanc\Chat\ConfigurationManager;
+use Thibaultvanc\Chat\Models\Conversation;
+use Thibaultvanc\Chat\Tests\Helpers\Models\Bot;
+use Thibaultvanc\Chat\Tests\Helpers\Models\Client;
+use Thibaultvanc\Chat\Tests\Helpers\Models\User;
+use Thibaultvanc\Chat\Tests\TestCase;
 use Symfony\Component\HttpFoundation\Response;
 
 class ConversationControllerTest extends TestCase

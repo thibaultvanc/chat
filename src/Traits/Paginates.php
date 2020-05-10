@@ -1,6 +1,6 @@
 <?php
 
-namespace Musonza\Chat\Traits;
+namespace Thibaultvanc\Chat\Traits;
 
 trait Paginates
 {

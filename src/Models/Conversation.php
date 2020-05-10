@@ -1,6 +1,6 @@
 <?php
 
-namespace Musonza\Chat\Models;
+namespace Thibaultvanc\Chat\Models;
 
 use Chat;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
@@ -9,14 +9,14 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Collection;
-use Musonza\Chat\BaseModel;
-use Musonza\Chat\ConfigurationManager;
-use Musonza\Chat\Eventing\AllParticipantsClearedConversation;
-use Musonza\Chat\Eventing\ParticipantsJoined;
-use Musonza\Chat\Eventing\ParticipantsLeft;
-use Musonza\Chat\Exceptions\DeletingConversationWithParticipantsException;
-use Musonza\Chat\Exceptions\DirectMessagingExistsException;
-use Musonza\Chat\Exceptions\InvalidDirectMessageNumberOfParticipants;
+use Thibaultvanc\Chat\BaseModel;
+use Thibaultvanc\Chat\ConfigurationManager;
+use Thibaultvanc\Chat\Eventing\AllParticipantsClearedConversation;
+use Thibaultvanc\Chat\Eventing\ParticipantsJoined;
+use Thibaultvanc\Chat\Eventing\ParticipantsLeft;
+use Thibaultvanc\Chat\Exceptions\DeletingConversationWithParticipantsException;
+use Thibaultvanc\Chat\Exceptions\DirectMessagingExistsException;
+use Thibaultvanc\Chat\Exceptions\InvalidDirectMessageNumberOfParticipants;
 
 class Conversation extends BaseModel
 {
