@@ -29,6 +29,7 @@ class MessageWasSent extends Event implements ShouldBroadcast
      */
     public function broadcastOn()
     {
+        
         return new Channel('mc-chat-conversation.'.$this->message->conversation_id);
         //return new PrivateChannel('mc-chat-conversation.'.$this->message->conversation_id);
     }
