@@ -36,16 +36,15 @@ class ConversationMessageController extends Controller
     public function index(GetParticipantMessages $request, $conversationId)
     {
         $conversation = Chat::conversations()->getById($conversationId);
-        $message = Chat::conversation($conversation)
-            ->setParticipant($request->getParticipant())
-            ->setPaginationParams($request->getPaginationParams())
-            ->getMessages();
-
+        $message = $conversation->messages;
         if ($this->messageTransformer) {
             return fractal($message, $this->messageTransformer)->respond();
         }
-
-        return response($message);
+         /*  $message = Chat::conversation($conversation)
+             ->setParticipant($request->getParticipant())
+             ->setPaginationParams($request->getPaginationParams())
+             ->getMessages(); */
+        return  response(['data'=>$message]);
     }
 
     public function show(GetParticipantMessages $request, $conversationId, $messageId)
