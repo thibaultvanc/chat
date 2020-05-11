@@ -29,12 +29,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "thibaultvanc\\Chat\\": "src/"
+            "Thibaultvanc\\Chat\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "thibaultvanc\\Chat\\Tests\\": "tests"
+            "Thibaultvanc\\Chat\\Tests\\": "tests"
         },
         "files": [
             "tests/Helpers/Models.php"
@@ -46,10 +46,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "thibaultvanc\\Chat\\ChatServiceProvider"
+                "Thibaultvanc\\Chat\\ChatServiceProvider"
             ],
             "aliases": {
-                "Chat": "thibaultvanc\\Chat\\Facades\\ChatFacade"
+                "Chat": "Thibaultvanc\\Chat\\Facades\\ChatFacade"
             }
         }
     }

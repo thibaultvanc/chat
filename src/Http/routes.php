@@ -1,7 +1,7 @@
 <?php
 
-$chatRoutesPrefix = config('Thibaultvanc_chat.routes.path_prefix');
-$middleware = config('Thibaultvanc_chat.routes.middleware');
+$chatRoutesPrefix = config('musonza_chat.routes.path_prefix');
+$middleware = config('musonza_chat.routes.middleware');
 
 Route::group([
     'middleware' => $middleware,

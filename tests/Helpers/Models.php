@@ -5,6 +5,8 @@ namespace Thibaultvanc\Chat\Tests\Helpers\Models;
 use Illuminate\Database\Eloquent\Model;
 use Thibaultvanc\Chat\Traits\Messageable;
 
+//use Thibaultvanc\Chat\Traits\Messageable;
+
 class User extends Model
 {
     use Messageable;
