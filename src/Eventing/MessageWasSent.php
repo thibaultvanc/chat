@@ -36,6 +36,9 @@ class MessageWasSent extends Event implements ShouldBroadcast
 
     public function broadcastWith()
     {
+        $sender = $this->message->sender;
+        $sender->class_type = get_class($sender);
+
         return [
             'message' => [
                 'id'              => $this->message->getKey(),
@@ -43,7 +46,7 @@ class MessageWasSent extends Event implements ShouldBroadcast
                 'conversation_id' => $this->message->conversation_id,
                 'type'            => $this->message->type,
                 'created_at'      => $this->message->created_at,
-                'sender'          => $this->message->sender,
+                'sender'          => $sender,
             ],
         ];
     }
