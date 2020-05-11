@@ -65,11 +65,11 @@ Publish the assets:
 php artisan vendor:publish
 ```
 
-This will publish database migrations and a configuration file `Thibaultvanc_chat.php` in the Laravel config folder.
+This will publish database migrations and a configuration file `musonza_chat.php` in the Laravel config folder.
 
 ## Configuration
 
-See `Thibaultvanc_chat.php` for configuration
+See `musonza_chat.php` for configuration
 
 Run the migrations:
 
@@ -377,7 +377,7 @@ Need to have more control on the data returned from the package routes? You can
 specify your own Model transformers and take advantage of [Fractal](http://fractal.thephpleague.com/).
 
 All you need to do is specify the location of your transformers in the configuration
-file `Thibaultvanc_chat.php` as follows:
+file `musonza_chat.php` as follows:
 
 ```php
 /**
